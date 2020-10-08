@@ -1,5 +1,8 @@
 import tkinter
 
+def startInterface():
+    window.mainloop()
+
 # inicio
 window = tkinter.Tk()
 window.title("Falsa Web")
