@@ -1,7 +1,10 @@
 from Modules import interface
 
 if __name__ == "__main__":
-   interface.startInterface()
+   window = interface.interface
+   
+
+
 
 
 # Aplicacion principal
