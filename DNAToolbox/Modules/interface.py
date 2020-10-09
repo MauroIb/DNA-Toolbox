@@ -5,7 +5,7 @@ def startInterface():
 
 # inicio
 window = tkinter.Tk()
-window.title("Falsa Web")
+window.title("Falsa Web hdfsakjsf")
 window.geometry('800x600')
 
 #label
