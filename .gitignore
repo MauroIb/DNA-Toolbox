@@ -1,2 +1,3 @@
 setup.py
-Modules/__pycache__/*
+DNAToolbox\Modules\__pycache__
+.vscode
