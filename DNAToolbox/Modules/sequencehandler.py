@@ -8,7 +8,7 @@ import interface
 def screen(frame):
     tk.Label(frame, text='A').pack()
     tk.Button(frame, text='Back to Main',
-              command=lambda: interface.interface.goto('main', frame)).pack()
+              command=lambda: interface.Interface.goto('main', frame)).pack()
 
 
 def seq_from_file(f_string, f_option):

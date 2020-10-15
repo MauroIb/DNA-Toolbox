@@ -1,7 +1,9 @@
 from Modules import interface
 
 if __name__ == "__main__":
-   window = interface.interface()
+   root = interface.tk.Tk()
+   window = interface.Interface(root)
+   root.mainloop()
    
 
 
