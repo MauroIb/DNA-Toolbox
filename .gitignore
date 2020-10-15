@@ -1,4 +1,9 @@
 setup.py
 DNAToolbox/Modules/__pycache__
 .vscode
+<<<<<<< HEAD
 DNAToolbox\Modules\__pycache__
+=======
+DNAToolbox/Modules/__pycache__/interface.cpython-38.pyc
+DNAToolbox/Modules/__pycache__/sequencehandler.cpython-38.pyc
+>>>>>>> e654167d10ebf839d095229377270349ec1197cf
