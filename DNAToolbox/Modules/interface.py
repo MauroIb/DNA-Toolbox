@@ -1,5 +1,6 @@
 import tkinter as tk
 from sequencehandler import *
+from signalprocessing import *
 
 class App(tk.Tk):
     def __init__(self):
@@ -15,7 +16,8 @@ class App(tk.Tk):
 
         self.frames = {}
         #Container. The one on top is visible
-        for F in (StartPage, SequenceHandlerScreen):
+        for F in (StartPage, SequenceHandlerScreen,
+        SignalProcessorScreen):
             page_name = F.__name__
             frame = F(parent=container, controller=self)
             self.frames[page_name] = frame
@@ -35,9 +37,16 @@ class StartPage(tk.Frame):
         self.controller = controller
         label = tk.Label(self, text="Pagina Principal")
         label.pack(side="top", fill="x", pady=10)
+
+        # boton sequence handler
         button1 = tk.Button(self, text="Open Sequence Handler",
                             command=lambda: controller.show_frame("SequenceHandlerScreen"))
         button1.pack()
+
+        # boton signal processing
+        button2 = tk.Button(self, text="Open Signal Processing Kit",
+                            command=lambda: controller.show_frame("SignalProcessorScreen"))
+        button2.pack()
 
 
 if __name__ == '__main__':
